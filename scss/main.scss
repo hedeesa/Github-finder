@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #333;
+}
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+.my-1 {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+.mb-05 {
+  margin-bottom: 0.5rem;
+}
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
+nav {
+  background: rgb(6, 142, 233);
+  color: white;
+}
+.card {
+  border: 1px solid rgb(199, 199, 199);
+  border-radius: 5px;
+  padding: 1rem;
+
+  #search {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid rgb(199, 199, 199);
+  }
+}
+
+.alert {
+  background: rgb(245, 90, 90);
+  color: white;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+}
+footer {
+  text-align: center;
+  border-top: 1px solid rgb(199, 199, 199);
+  border-bottom: 1px solid rgb(199, 199, 199);
+}
