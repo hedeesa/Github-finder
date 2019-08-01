@@ -14,13 +14,44 @@ body {
 
 .my-1 {
   margin-top: 1rem;
-  margin-bottom: 2rem; }
+  margin-bottom: 1rem; }
 
 .mb-05 {
   margin-bottom: 0.5rem; }
 
 .mb-1 {
   margin-bottom: 1rem; }
+
+a {
+  text-decoration: none; }
+
+img {
+  width: 100%;
+  border-radius: 4px; }
+
+.bg-prm-blue {
+  background: #068ee9; }
+
+.bg-prm-green {
+  background: #0daf23; }
+
+.bg-prm-yellow {
+  background: #e9d206; }
+
+.btn-primary {
+  text-align: center;
+  color: white;
+  padding: 1rem;
+  display: inline-block;
+  border-radius: 360px;
+  width: 100%; }
+
+.btn-small {
+  padding: 0.5rem;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 0.8rem;
+  color: white; }
 
 nav {
   background: #068ee9;
@@ -32,9 +63,36 @@ nav {
   padding: 1rem; }
   .card #search {
     width: 100%;
-    padding: 0.5rem;
+    padding: 0.8rem 1rem;
     border-radius: 5px;
     border: 1px solid #c7c7c7; }
+
+.profile {
+  display: grid;
+  grid-template-columns: 2fr 4fr;
+  grid-gap: 1rem; }
+  .profile .avt-btn {
+    margin-top: 0.5rem; }
+  .profile #detail #list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between; }
+  .profile #detail #content {
+    margin-top: 1rem; }
+    .profile #detail #content-list {
+      list-style: none; }
+      .profile #detail #content-list li {
+        padding: 0.8rem 1rem;
+        border-top: 1px solid #c7c7c7;
+        border-left: 1px solid #c7c7c7;
+        border-right: 1px solid #c7c7c7; }
+        .profile #detail #content-list li:first-child {
+          border-top-left-radius: 4px;
+          border-top-right-radius: 4px; }
+        .profile #detail #content-list li:last-child {
+          border-bottom: 1px solid #c7c7c7;
+          border-bottom-left-radius: 4px;
+          border-bottom-right-radius: 4px; }
 
 .alert {
   background: #f55a5a;
