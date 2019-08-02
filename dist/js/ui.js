@@ -7,7 +7,7 @@ class UI {
     this.clearAlert();
     const div = document.createElement("div");
     div.innerHTML = message;
-    div.className = "alert";
+    div.className = "alert mb-1";
     const searchContainer = document.getElementById("search-container");
     const card = document.querySelector(".card");
     searchContainer.insertBefore(div, card);

@@ -12,12 +12,14 @@
     <title>Gtihub Finder</title>
   </head>
   <body>
+    <!-- Navbar -->
     <nav>
       <div class="container">
         <h1>Github Finder</h1>
       </div>
     </nav>
-    <div class="container my-1 mb-05" id="search-container">
+    <!-- search Part -->
+    <div class="container my-1 mb-05">
       <div class="card">
         <h1 class="mb-05">Search Github Users</h1>
         <p class="mb-1">
@@ -26,24 +28,24 @@
         <input id="search" type="text" placeholder="Github Username..." />
       </div>
     </div>
+    <!-- profile part -->
     <div class="container">
-      <div class="card profile">
+      <div class="card" id="profile">
         <div id="avatar">
           <img src="https://avatars0.githubusercontent.com/u/1?v=4" alt="" />
-
-          <a href="#" class="btn-primary bg-prm-blue avt-btn">View Profile</a>
+          <a href="#" class="btn-primary bg-prm-blue avt-btn mt-05">View Profile</a>
         </div>
-        <div id="detail">
-          <div id="boxes">
-            <ul id="list">
-              <li class=" bg-prm-blue btn-small">Public Repos: 93</li>
-              <li class=" bg-prm-yellow btn-small">Public Gists: 3</li>
-              <li class=" bg-prm-green btn-small">Followers: 352</li>
-              <li class=" bg-prm-blue btn-small">Following: 0</li>
+        <div >
+          <div id="content">
+            <ul class="box-list">
+              <li class="bg-prm-blue btn-small">Public Repos: 93</li>
+              <li class="bg-prm-yellow btn-small">Public Gists: 3</li>
+              <li class="bg-prm-green btn-small">Followers: 352</li>
+              <li class="bg-prm-blue btn-small">Following: 0</li>
             </ul>
           </div>
-          <div id="content">
-            <ul id="content-list">
+          <div id="detail" >
+            <ul id="detail-list">
               <li>Company: Traversy Media</li>
               <li>Website/blog: traversy.com</li>
               <li>Location: Boston</li>
@@ -52,10 +54,24 @@
           </div>
         </div>
       </div>
-      <h2>Latest Repos</h2>
-          <div class="card">
-    </div>
-
+      <!-- Latest Repos -->
+      <h2 class="my-1">Latest Repos</h2>
+      <div id="repos" class="mb-1">
+        <div class="repo mt-05">
+          <div class="repo-link">
+            <a href="#">Babel </a>
+          </div>
+          <div>
+            <ul  class="box-list">
+              <li class=" bg-prm-blue btn-small">Stars: 8</li>
+              <li class=" bg-prm-yellow btn-small">Watchers: 3</li>
+              <li class=" bg-prm-green btn-small">Forks: 352</li>
+            </ul> 
+          </div>
+        </div>
+      </div>
+    
+    <!-- footer -->
     <footer>
       <div class="container">
         <p>
@@ -64,6 +80,7 @@
       </div>
     </footer>
 
+    <!-- Scripts -->
     <script src="js/github.js"></script>
     <script src="js/UI.js"></script>
     <script src="js/app.js"></script>
