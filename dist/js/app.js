@@ -12,8 +12,11 @@ search.addEventListener("keyup", e => {
         ui.showAlert("User Not Found");
       } else {
         // show profile
-        ui.showProfile(data.profile);
+        ui.showProfile(data.profile, data.repos);
+        console.log(data.profile, data.repos);
       }
     });
+  } else {
+    ui.clearProfile();
   }
 });
